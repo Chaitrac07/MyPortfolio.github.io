@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!--Header-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Portfolio.</a>
+                <ul id="sidemenu">
+                    <li><a href="#header">01. Home</a></li>
+                    <li><a href="#about">02. About Me</a></li>
+                     <li><a href="#portfolio">03. Projects</a></li>
+                    <li><a href="#contact">04. Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hello, my name is</p>
+                <h1><span>Chaitra C.</span></h1>
+                <h2>I love exploring new things!</h2>
+                &nbsp;
+                <h4>I'm a B.E Graduate in Electronics and Telecommunication Engineering from KSIT, Bangalore.</h4>
+                &nbsp;
+                <h4>Primarily  interested in Web Developement.</h4>
+                &nbsp;
+                <h4>I enjoy learning new skills and implementing them in real life!</h4>
+                <img class="img-dp" src="img/profiledp.jpeg" alt="">
+            </div>  
+            <a href="#contact" class="btnn">Get in touch</a>     
+        </div>
+    </div>
+    
+    <!--ABOUT-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                     <img src="img/profiledp.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    &nbsp;
+                    &nbsp;
+                    <h1 class="sub-title">02. About Me</h1>
+                    &nbsp;
+                    <p>Hello! I'm Chaitra C , from Bangalore, also known as Silicon valley of India.</p>
+                    &nbsp;
+                    <p>I am a creative, time punctual, dedicated, goal-oriented individual with decent moral Values and Ethicates along with a high-energy level, honed communication skills, strong organizational skills, and meticulous attention to detail.</p>
+                    &nbsp;
+                    <p>I am recent B.E Graduate from KSIT, Bangalore in Electronics and Telecommunication Engineering (2019-2024) and secured with overall CGPA is 8.35 out of 10.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Certifications')">Certifications</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Hobbies')">Hobbies</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>JAVA</span><br>Backend Language</li>
+                            <li><span>HTML/CSS</span><br>Frontend Languages</li>
+                            <li><span>MySQL</span><br>Database Language</li>
+                            <li><span>Hibernate/Spring</span><br>Frameworks</li>
+                            <li><span>Computer Network basics</span><br>CCNA Basics</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Certifications">
+                        <ul>
+                            <li><span>May 2024</span><br>JAVA Full Stack Web Developement Taining at Tap Academy</li>
+                            <li><span>Apr 2023</span><br>AWS Cloudcomputing Basics Course by PayPal Associated with ICT Academy.</li>
+                            <li><span>Sep 2022</span><br>Frontend Web Development Internship at Global Technologics PVT limited<li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Oct 2023 - May 2024</span><br>JAVA Full Stack Web Developement Taining at Tap Academy</li>
+                            <li><span>Aug 2019 - May 2023</span><br>B.E from K S Institute of Technology</li>
+                            <li><span>Jun 2017 - May 2019</span><br>PUC from SRI Venkateshwara PU College</li>
+                            <li><span>May 2017</span><br>Bethel English Medium High School </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Hobbies">
+                        <ul>
+                            <li><span>Pencil Sketching</span></li>
+                            <li>Badminton</li>
+                            <li><span>Reading</span></li>
+                            <li>Cooking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---Projects Portfolio-->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">03. Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/p0.png">
+                    <div class="layer">
+                        <h3>"BASIC TEXT EDITOR "</h3>
+                        <p>Computed Using: HTML, CSS ,js</p>
+                        &nbsp;
+                        <p>Proficient in word processing software like Microsoft Word, it excels in creating, formatting and editing 
+                            documents for diverse purposes. Its skills include document formatting, text styling, document templates, 
+                            and effective use of features such as track changes and version control.</p>
+                        <a href="https://github.com/Chaitrac07"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/p2.png">
+                    <div class="layer">
+                        <h3>"ProtecFile - Enhanced File Hiding with OTP And Email Authentication"</h3>
+                        <p>Computed by 2 concepts: Java and MySQL;</p>
+                        &nbsp;
+                        <p>Developed a secure file management system designed to hide sensitive files, integrated with OTP and email 
+                            authentication to ensure robust security</p>
+                        <a href="https://github.com/Chaitrac07"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work"> 
+                    <img src="img/p4.png">
+                    <div class="layer">
+                        <h3>"Glove - Gestures Based Patient's Needs Alerting System"</h3>
+                        <p> Developed a smart glove with flex sensors for patient gesture communication and real-time health 
+                            monitoring with emergency alerts.
+                             <br>
+                            Recognized by 46th KSCST program, awarded Rs.5k for healthcare innovation aiding physically challenged, 
+                            bedridden, paralyzed, and elderly</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/p3.png" alt="">
+                    <div class="layer">
+                        <h3>"IOT Based Air and Noise Pollution Monitoring System"</h3>
+                        <p>Created IoT solution for monitoring air/noise pollution, with real-time data collection. <br>
+                        Implemented Telegram alerts for instant notifications on pollution threshold breaches. <br>
+                        Demonstrated at the National Conference as part of Recent Innovations in Engineering-2022 and received 
+                            appreciation with certification.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    
+    <!--CONTACT-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">04. Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> chaitra.cj0712@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/chaitra-c-a21b2b248/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Chaitrac07"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="img/Chaitra C.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2024, <i class="fa-solid fa-heart"></i> Portfolio by <a href=""><span>Chaitra C</span></a>  </p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemen=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemen.style.right="0";
+        }
+        function closemenu(){
+            sidemen.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw5BeUR-k4IPVrKwz6X0Gr2MZzzBg46R_qg7COetGLG_85xpDfJ_Lfiw3F-6YrPQ1zv1g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+  
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+     </script>
+</body>
+</html>
